@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="row sticky-top bg-white">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link text-primary  active" id="nav-data-tab" data-bs-toggle="tab" data-bs-target="#nav-data" type="button" role="tab" aria-controls="nav-data" aria-selected="true">Data</button>
+                <button class="nav-link text-primary" id="nav-dataInput-tab" data-bs-toggle="tab" data-bs-target="#nav-dataInput" type="button" role="tab" aria-controls="nav-dataInput" aria-selected="false">Input Data</button>
+            </div>
+        </nav>
+        <form class="tab-content was-validated" id = "nav-tabContent">
+            <div class = "tab-pane fade show active" id="nav-data" role="tabpanel" aria-labelledby="nav-data-tab">
+                <div class="container mt-5 w-50">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card border-primary">
+                                <img src="https://reqres.in/img/faces/8-image.jpg" class="card-img-top" alt="Cool image you won't see.">
+                                <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                    <button class="nav-link active" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email1" type="button" role="tab" aria-controls="pills-email" aria-selected="true">Email</button>
+                                    <button class="nav-link" id="pills-firstName-tab" data-bs-toggle="pill" data-bs-target="#pills-firstName1" type="button" role="tab" aria-controls="pills-firstName" aria-selected="false">First Name</button>
+                                    <button class="nav-link" id="pills-lastName-tab" data-bs-toggle="pill" data-bs-target="#pills-lastName1" type="button" role="tab" aria-controls="pills-lastName" aria-selected="false">Last Name</button>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-email1" role="tabpanel" aria-labelledby="pills-email-tab">michael.lawson@reqres.in</div>
+                                    <div class="tab-pane fade" id="pills-firstName1" role="tabpanel" aria-labelledby="pills-firstName-tab">Michael</div>
+                                    <div class="tab-pane fade" id="pills-lastName1" role="tabpanel" aria-labelledby="pills-lastName-tab">Lawson</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-primary">
+                                <img src="https://reqres.in/img/faces/7-image.jpg" class="card-img-top" alt="Cool image you won't see.">
+                                <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                    <button class="nav-link active" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email2" type="button" role="tab" aria-controls="pills-email" aria-selected="true">Email</button>
+                                    <button class="nav-link" id="pills-firstName-tab" data-bs-toggle="pill" data-bs-target="#pills-firstName2" type="button" role="tab" aria-controls="pills-firstName" aria-selected="false">First Name</button>
+                                    <button class="nav-link" id="pills-lastName-tab" data-bs-toggle="pill" data-bs-target="#pills-lastName2" type="button" role="tab" aria-controls="pills-lastName" aria-selected="false">Last Name</button>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-email2" role="tabpanel" aria-labelledby="pills-email-tab">lindsay.ferguson@reqres.in</div>
+                                    <div class="tab-pane fade" id="pills-firstName2" role="tabpanel" aria-labelledby="pills-firstName-tab">Lindsay</div>
+                                    <div class="tab-pane fade" id="pills-lastName2" role="tabpanel" aria-labelledby="pills-lastName-tab">Ferguson</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-primary">
+                                <img src="https://reqres.in/img/faces/9-image.jpg" class="card-img-top" alt="Cool image you won't see.">
+                                <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                    <button class="nav-link active" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email3" type="button" role="tab" aria-controls="pills-email" aria-selected="true">Email</button>
+                                    <button class="nav-link" id="pills-firstName-tab" data-bs-toggle="pill" data-bs-target="#pills-firstName3" type="button" role="tab" aria-controls="pills-firstName" aria-selected="false">First Name</button>
+                                    <button class="nav-link" id="pills-lastName-tab" data-bs-toggle="pill" data-bs-target="#pills-lastName3" type="button" role="tab" aria-controls="pills-lastName" aria-selected="false">Last Name</button>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-email3" role="tabpanel" aria-labelledby="pills-email-tab">tobias.funke@reqres.in</div>
+                                    <div class="tab-pane fade" id="pills-firstName3" role="tabpanel" aria-labelledby="pills-firstName-tab">Tobias</div>
+                                    <div class="tab-pane fade" id="pills-lastName3" role="tabpanel" aria-labelledby="pills-lastName-tab">Funke</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-primary">
+                                <img src="https://reqres.in/img/faces/10-image.jpg" class="card-img-top" alt="Cool image you won't see.">
+                                <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                    <button class="nav-link active" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email4" type="button" role="tab" aria-controls="pills-email" aria-selected="true">Email</button>
+                                    <button class="nav-link" id="pills-firstName-tab" data-bs-toggle="pill" data-bs-target="#pills-firstName4" type="button" role="tab" aria-controls="pills-firstName" aria-selected="false">First Name</button>
+                                    <button class="nav-link" id="pills-lastName-tab" data-bs-toggle="pill" data-bs-target="#pills-lastName4" type="button" role="tab" aria-controls="pills-lastName" aria-selected="false">Last Name</button>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-email4" role="tabpanel" aria-labelledby="pills-email-tab">byron.fields@reqres.in</div>
+                                    <div class="tab-pane fade" id="pills-firstName4" role="tabpanel" aria-labelledby="pills-firstName-tab">Byron</div>
+                                    <div class="tab-pane fade" id="pills-lastName4" role="tabpanel" aria-labelledby="pills-lastName-tab">Fields</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-primary">
+                                <img src="https://reqres.in/img/faces/11-image.jpg" class="card-img-top" alt="Cool image you won't see.">
+                                <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                    <button class="nav-link active" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email5" type="button" role="tab" aria-controls="pills-email" aria-selected="true">Email</button>
+                                    <button class="nav-link" id="pills-firstName-tab" data-bs-toggle="pill" data-bs-target="#pills-firstName5" type="button" role="tab" aria-controls="pills-firstName" aria-selected="false">First Name</button>
+                                    <button class="nav-link" id="pills-lastName-tab" data-bs-toggle="pill" data-bs-target="#pills-lastName5" type="button" role="tab" aria-controls="pills-lastName" aria-selected="false">Last Name</button>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-email5" role="tabpanel" aria-labelledby="pills-email-tab">george.edwards@reqres.in</div>
+                                    <div class="tab-pane fade" id="pills-firstName5" role="tabpanel" aria-labelledby="pills-firstName-tab">George</div>
+                                    <div class="tab-pane fade" id="pills-lastName5" role="tabpanel" aria-labelledby="pills-lastName-tab">Edwards</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-primary">
+                                <img src="https://reqres.in/img/faces/12-image.jpg" class="card-img-top" alt="Cool image you won't see.">
+                                <div class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                                    <button class="nav-link active" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email6" type="button" role="tab" aria-controls="pills-email" aria-selected="true">Email</button>
+                                    <button class="nav-link" id="pills-firstName-tab" data-bs-toggle="pill" data-bs-target="#pills-firstName6" type="button" role="tab" aria-controls="pills-firstName" aria-selected="false">First Name</button>
+                                    <button class="nav-link" id="pills-lastName-tab" data-bs-toggle="pill" data-bs-target="#pills-lastName6" type="button" role="tab" aria-controls="pills-lastName" aria-selected="false">Last Name</button>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-email6" role="tabpanel" aria-labelledby="pills-email-tab">rachel.howell@reqres.in</div>
+                                    <div class="tab-pane fade" id="pills-firstName6" role="tabpanel" aria-labelledby="pills-firstName-tab">Rachel</div>
+                                    <div class="tab-pane fade" id="pills-lastName6" role="tabpanel" aria-labelledby="pills-lastName-tab">Howell</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Page switch">
+                    <ul class="pagination justify-content-center mt-5">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class = "tab-pane fade show" id="nav-dataInput" role="tabpanel" aria-labelledby="nav-dataInput-tab">
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for= "mail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.domain" required>
+                        <div class="valid-feedback text-success">Passable.</div>
+                        <div class="invalid-feedback text-warning">Fill the field.</div>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for= "firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="John" required>
+                        <div class="valid-feedback text-success">Passable.</div>
+                        <div class="invalid-feedback text-warning">Fill the field.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for= "lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+                        <div class="valid-feedback text-success">Passable.</div>
+                        <div class="invalid-feedback text-warning">Fill the field.</div>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for= "avatar" class="form-label">Avatar</label>
+                        <input type="text" class="form-control" id="avatar" placeholder="link to image" required>
+                        <div class="valid-feedback text-success">Passable.</div>
+                        <div class="invalid-feedback text-warning">Fill the field.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
